@@ -1,6 +1,6 @@
 
 a = int(input("input first num -> "))
-b = int(input("input second num -> "))
+k = int(input("input second num -> "))
 
 def num_minus (num1, num2):
     print(num1)
@@ -12,4 +12,4 @@ def num_minus (num1, num2):
         print("Число повинно бути натуральним")
         return 0
 
-num_minus(a,b)    
+num_minus(a,k)    
