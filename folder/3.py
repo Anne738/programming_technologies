@@ -2,9 +2,9 @@
 a = int(input("input first num -> "))
 k = int(input("input second num -> "))
 
-def num_minus (num1, num2):
+def num_minus (num1):
     print(num1)
-    if num1 > num2:
+    if num1 > 0:
         return num_minus(num1-1)
     if num1 == 0:
         return 0  
