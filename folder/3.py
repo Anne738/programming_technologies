@@ -12,4 +12,7 @@ def num_minus (num1, num2):
         print("Число повинно бути натуральним")
         return 0
 
-num_minus(a,k)    
+num_minus(a,k)  
+
+def cucu():
+    print(cucu)
