@@ -24,3 +24,7 @@ def num_plus (num1, num2):
 def kyky():
     print("kyky")
     
+
+def hello():
+    print("Hello")
+    
