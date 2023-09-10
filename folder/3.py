@@ -27,4 +27,8 @@ def kyky():
 
 def hello():
     print("Hello")
+
+
+def hay():
+    print("How are you?")
     
