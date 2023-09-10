@@ -13,3 +13,10 @@ def num_minus (num1, num2):
         return 0
 
 num_minus(a,k)    
+
+def num_plus (num1, num2):
+    print(num1)
+    if num1 < num2:
+        return num_minus(num1+1)
+    if num1 == num2:
+        return num1 
