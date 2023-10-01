@@ -10,6 +10,10 @@ class TestOrderStack(unittest.TestCase):
 
     def test_add2(self):
         self.assertFalse(self.order.push(4,0))
+
+    @unittest.expectedFailure
+    def test_add3(self):
+        self.assertFalse(self.order.push(4,1))
  
     def test_addexept(self):
         with self.assertRaises(TypeError):
