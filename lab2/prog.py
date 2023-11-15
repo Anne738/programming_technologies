@@ -11,22 +11,24 @@ class OrderStack:
 
     def push(self, i, q):
         order = Order(i, q)
-        try:
-            if order.quantity > 0:
-                self.stack.append(order)
-            else:
+        if order.quantity > 0:
+            self.stack.append(order)
+        else:
                 #print("Помилка: Кількість товару повинна бути більше 0.")
-                return False
-        except TypeError:
-            print("Помилка: Невірний формат замовлення.")
+            return False
+        #try:
+            
+        #except TypeError:
+            #print("Помилка: Невірний формат замовлення.")
 
     def pop(self):
-        try:
-            order = self.stack.pop()
-            #print(f"Замовлення на {order.item} ({order.quantity} одиниць) виконано.")
-            return -1
-        except IndexError:
-            print("Стек замовлень порожній.")
+        order = self.stack.pop()
+        #try:
+        #    order = self.stack.pop()
+        #    #print(f"Замовлення на {order.item} ({order.quantity} одиниць) виконано.")
+        #    return -1
+        #except IndexError:
+        #    print("Стек замовлень порожній.")
 
     def view(self):
         #print("Список замовлень:")

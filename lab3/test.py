@@ -32,7 +32,13 @@ class TestOrderStack(unittest.TestCase):
         self.assertEqual(self.order.view(), None)
 
 
-
 if __name__ == "__main__":
+    from xmlrunner import XMLTestRunner
+
+    
+    runner = XMLTestRunner(output='test-reports')
+    unittest.main(testRunner=runner)
+
+    
     unittest.main()
 
